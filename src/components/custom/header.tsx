@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
 const Header = () => {
     return (
         <header className="bg-white">
-            <nav className="container py-5 flex items-center justify-between">
+            <nav className="max-w-7xl mx-auto flex items-center justify-between px-3 h-15">
                 <div className="flex items-center space-x-4">
                     <svg
                         data-testid="logo"
@@ -50,7 +50,7 @@ const Header = () => {
                         <Link href="/cart">
                             <ShoppingBasket className="hover:text-primary" />
                         </Link>
-                        <span className="absolute -top-4 -right-5 h-6 w-6 flex items-center justify-center rounded-full bg-primary font-bold text-white">
+                        <span className="absolute -top-3 -right-5 h-6 w-6 flex items-center justify-center rounded-full bg-primary font-bold text-white">
                             3
                         </span>
                     </div>
