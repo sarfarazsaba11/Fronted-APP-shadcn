@@ -121,6 +121,9 @@ const beverages:Product[] = [
                             <TabsTrigger value="beverages" className="text-md">
                                 Beverages
                             </TabsTrigger>
+                             <TabsTrigger value="test" className="text-md">
+                                Test
+                            </TabsTrigger>
                         </TabsList>
                         <TabsContent value="pizza" className='py-6'>
                             <div className="grid grid-cols-4 gap-6 ">
@@ -131,6 +134,13 @@ const beverages:Product[] = [
                         </TabsContent>
                         <TabsContent value="beverages">
                             <div className="grid grid-cols-4 gap-6 mt-6">
+                                {beverages.map((product) => (
+                                    <ProductCard product={product} key={product.id} />
+                                ))}
+                            </div>
+                        </TabsContent>
+                         <TabsContent value="test">
+                            <div className="flex items-center justify-center gap-6 mt-6">
                                 {beverages.map((product) => (
                                     <ProductCard product={product} key={product.id} />
                                 ))}
