@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/custom/header";
+import { cn } from "@/lib/utils";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -29,7 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${fira_sans.variable}} antialiased`}
+        //className={`${manrope.variable} ${fira_sans.variable}} antialiased`}
+      className={cn('min-h-screen bg-background antialiased font-manrope font-fira-sans',manrope.variable,fira_sans.variable)}
       >
         <Header/>
 

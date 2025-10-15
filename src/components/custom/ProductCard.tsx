@@ -5,6 +5,7 @@ import { Button } from "../ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label';
+import ToppingList from './toppingList'
 
 export interface Product {
   id: string,
@@ -130,6 +131,8 @@ const ProductCard = ({ product }: PropTypes) => {
                       </div>
                     </RadioGroup>
                   </div>
+
+                  <ToppingList />
 
 
 
